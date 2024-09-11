@@ -6,6 +6,24 @@
     <title>String</title>
 </head>
 <body>
+    <script>
+        const userInformation = "I'm Amirreza Noori, my email is amirreza.noori@yahoo.com\
+        and my phone number is 09199574896";
+
+        const emailPoss = userInformation.indexOf("email");
+        document.write("a)email position is: ", emailPoss, "<br>");
+
+        const myPhonePoss = userInformation.indexOf("my phone"); 
+        document.write("b)show from my phone and after my phone: ",userInformation.slice(myPhonePoss),"<br>");
+
+        const myEmailPoss = userInformation.indexOf("my email");
+        const andPoss = userInformation.indexOf("and");
+        document.write("c) show from my emil to before and: ",userInformation.slice(myEmailPoss,andPoss), "<br>");
+
+        document.write("d) phone number: ", userInformation.match(/\d{11}/), "<br>");
+        document.write("e) show email: ", userInformation.match(/\w+.\w+@\w+.\w+/), "<br>");
+
+    </script>
     
 </body>
 </html>
