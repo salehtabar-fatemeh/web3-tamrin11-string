@@ -21,8 +21,8 @@
         document.write("c) show from my emil to before and: ",userInformation.slice(myEmailPoss,andPoss), "<br>");
 
         document.write("d) phone number: ", userInformation.match(/\d{11}/), "<br>");
-        document.write("e) show email: ", userInformation.match(/\w+.\w+@\w+.\w+/), "<br>");
-
+        document.write("e) show email: ", userInformation.match(/\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b/g), "<br>");
+        
     </script>
     
 </body>
